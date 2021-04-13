@@ -17,8 +17,9 @@
 
     dependencies {
         ...
-        implementation 'com.github.liudingyi.PrefAnnotation:annotations:@version'
-        annotationProcessor 'com.github.liudingyi.PrefAnnotation:processors:@version'
+        implementation 'com.tencent:mmkv-static:1.2.7'
+        implementation 'com.github.liudingyi.KvPreAnnotation:annotations:@version'
+        annotationProcessor 'com.github.liudingyi.KvPreAnnotation:processors:@version'
     }
 
 
@@ -27,9 +28,10 @@
 
 注解名| 注解作用 | 注解属性
 ---|---|---
-@SharePref | 标记对应的preference数据类 | name:偏好名称
+@SharePref | 标记对应的preference数据类
 @PrefKey | 标记属性的key | key：属性的key
 @ObjectType | 标记属性对象类型（支持泛型对象）
+@ParcelType | 标记属性Parcelable对象类型（支持泛型对象）
 @DefaultInt | 标记默认的Int值 | value：默认值
 @DefaultFloat | 标记默认的Float值 | value：默认值
 @DefaultLong | 标记默认的Long值 | value：默认值
@@ -40,7 +42,7 @@
 
 ```
 
-@SharePref(name = "sample_pref")
+@SharePref
 public class Pref {
 
     @PrefKey(key = "user_name")
