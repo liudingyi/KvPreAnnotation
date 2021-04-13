@@ -1,5 +1,4 @@
 apply plugin: 'java'
-apply plugin: 'com.github.dcendents.android-maven'
 
 targetCompatibility = '1.8'
 sourceCompatibility = '1.8'
@@ -11,5 +10,3 @@ dependencies {
     implementation 'com.tencent:mmkv-static:1.2.7'
     implementation project(':annotations')
 }
-
-group = 'com.liudingyi.android'

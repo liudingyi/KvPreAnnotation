@@ -3,12 +3,16 @@ package com.kvpref.sample;
 import android.app.Activity;
 import android.os.Bundle;
 
+import com.tencent.mmkv.MMKV;
+
 public class MainActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        MMKV.initialize(this);
+
 //        Pref_.initialize(getApplicationContext());
 //        Pref_ pref = Pref_.getInstance();
 //        pref.putAge(1);

@@ -17,7 +17,7 @@ public class Pref {
     @PrefKey(key = "isMan")
     public boolean isMan;
 
-    @PrefKey(key = "money")
+    @PrefKey(key = "momey")
     public long money;
 
     @PrefKey(key = "height")
