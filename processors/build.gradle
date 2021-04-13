@@ -1,0 +1,12 @@
+apply plugin: 'java'
+
+targetCompatibility = '1.8'
+sourceCompatibility = '1.8'
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.squareup:javapoet:1.11.1'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.tencent:mmkv-static:1.2.7'
+    implementation project(':annotations')
+}
