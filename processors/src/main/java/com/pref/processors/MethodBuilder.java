@@ -81,6 +81,7 @@ public class MethodBuilder {
                 .addParameter(String.class, "pref_name")
                 .addStatement("$T preference = context.getSharedPreferences(pref_name, 0)", SharedPreferences)
                 .addStatement("$N.importFromSharedPreferences(preference)", mmkv)
+                .addStatement("preference.edit().clear();")
                 .build();
 
     }
