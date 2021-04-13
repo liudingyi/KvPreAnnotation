@@ -1,10 +1,10 @@
-package com.kvpref.sample;
+package com.pref.sample;
 
-import com.kvpref.annotations.ObjectType;
-import com.kvpref.annotations.ParcelType;
-import com.kvpref.annotations.PrefKey;
-import com.kvpref.annotations.SharePref;
-import com.kvpref.sample.data.User;
+import com.pref.annotations.ObjectType;
+import com.pref.annotations.ParcelType;
+import com.pref.annotations.PrefKey;
+import com.pref.annotations.SharePref;
+import com.pref.sample.data.User;
 
 import java.util.List;
 

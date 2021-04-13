@@ -1,4 +1,4 @@
-package com.kvpref.annotations;
+package com.pref.annotations;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -7,6 +7,5 @@ import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.SOURCE)
 @Target(ElementType.FIELD)
-public @interface DefaultFloat {
-    float value() default 0f;
+public @interface ParcelType {
 }

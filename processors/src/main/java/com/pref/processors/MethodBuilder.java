@@ -1,4 +1,4 @@
-package com.kvpref.processors;
+package com.pref.processors;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -11,7 +11,7 @@ import javax.lang.model.element.Modifier;
 
 public class MethodBuilder {
 
-    public static final String PrefPackageName = "com.kvpref";
+    public static final String PrefPackageName = "com.pref";
     public static String PrefClassName = "Pref";
     public static final String PrefInstanceName = "instance";
 

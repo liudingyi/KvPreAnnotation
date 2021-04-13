@@ -1,4 +1,4 @@
-package com.kvpref.annotations;
+package com.pref.annotations;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -7,6 +7,6 @@ import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.SOURCE)
 @Target(ElementType.FIELD)
-public @interface DefaultBoolean {
-    boolean value() default false;
+public @interface PrefKey {
+    String key() default "";
 }

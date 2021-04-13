@@ -1,4 +1,4 @@
-package com.kvpref.processors;
+package com.pref.processors;
 
 public class PreferenceProcessorsException extends RuntimeException {
 

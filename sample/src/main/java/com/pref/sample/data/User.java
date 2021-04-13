@@ -1,4 +1,4 @@
-package com.kvpref.sample.data;
+package com.pref.sample.data;
 
 import android.os.Parcel;
 import android.os.Parcelable;

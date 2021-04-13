@@ -1,11 +1,12 @@
-package com.kvpref.annotations;
+package com.pref.annotations;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-@Retention(RetentionPolicy.CLASS)
-@Target(ElementType.TYPE)
-public @interface SharePref {
+@Retention(RetentionPolicy.SOURCE)
+@Target(ElementType.FIELD)
+public @interface DefaultLong {
+    long value() default 0;
 }

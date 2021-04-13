@@ -1,7 +1,9 @@
-package com.kvpref.sample;
+package com.pref.sample;
 
 import android.app.Activity;
 import android.os.Bundle;
+
+import com.kvpref.sample.R;
 
 public class MainActivity extends Activity {
 

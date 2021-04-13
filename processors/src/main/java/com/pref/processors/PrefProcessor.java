@@ -1,14 +1,14 @@
-package com.kvpref.processors;
+package com.pref.processors;
 
-import com.kvpref.annotations.DefaultBoolean;
-import com.kvpref.annotations.SharePref;
-import com.kvpref.annotations.DefaultFloat;
-import com.kvpref.annotations.DefaultInt;
-import com.kvpref.annotations.DefaultLong;
-import com.kvpref.annotations.DefaultString;
-import com.kvpref.annotations.ObjectType;
-import com.kvpref.annotations.ParcelType;
-import com.kvpref.annotations.PrefKey;
+import com.pref.annotations.DefaultBoolean;
+import com.pref.annotations.SharePref;
+import com.pref.annotations.DefaultFloat;
+import com.pref.annotations.DefaultInt;
+import com.pref.annotations.DefaultLong;
+import com.pref.annotations.DefaultString;
+import com.pref.annotations.ObjectType;
+import com.pref.annotations.ParcelType;
+import com.pref.annotations.PrefKey;
 import com.squareup.javapoet.ClassName;
 import com.squareup.javapoet.JavaFile;
 import com.squareup.javapoet.TypeSpec;
@@ -29,15 +29,15 @@ import javax.lang.model.element.TypeElement;
 
 @SupportedSourceVersion(SourceVersion.RELEASE_7)
 @SupportedAnnotationTypes({
-        "com.kvpref.annotations.SharePref",
-        "com.kvpref.annotations.PrefKey",
-        "com.kvpref.annotations.DefaultInt",
-        "com.kvpref.annotations.DefaultFloat",
-        "com.kvpref.annotations.DefaultLong",
-        "com.kvpref.annotations.DefaultBoolean",
-        "com.kvpref.annotations.DefaultString",
-        "com.kvpref.annotations.ObjectType",
-        "com.kvpref.annotations.ParcelType"
+        "com.pref.annotations.SharePref",
+        "com.pref.annotations.PrefKey",
+        "com.pref.annotations.DefaultInt",
+        "com.pref.annotations.DefaultFloat",
+        "com.pref.annotations.DefaultLong",
+        "com.pref.annotations.DefaultBoolean",
+        "com.pref.annotations.DefaultString",
+        "com.pref.annotations.ObjectType",
+        "com.pref.annotations.ParcelType"
 })
 public class PrefProcessor extends AbstractProcessor {
 
