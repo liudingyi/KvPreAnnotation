@@ -83,7 +83,6 @@ public class MethodBuilder {
                 .addStatement("$N.importFromSharedPreferences(preference)", mmkv)
                 .addStatement("preference.edit().clear();")
                 .build();
-
     }
 
     /**
