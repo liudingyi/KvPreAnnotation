@@ -11,7 +11,7 @@ import javax.lang.model.element.Modifier;
 
 public class MethodBuilder {
 
-    public static final String PrefPackageName = "com.pref";
+    public static final String PrefPackageName = "com.kvpref";
     public static String PrefClassName = "Pref";
     public static final String PrefInstanceName = "instance";
 

@@ -29,15 +29,15 @@ import javax.lang.model.element.TypeElement;
 
 @SupportedSourceVersion(SourceVersion.RELEASE_7)
 @SupportedAnnotationTypes({
-        "com.pref.annotations.SharePref",
-        "com.pref.annotations.PrefKey",
-        "com.pref.annotations.DefaultInt",
-        "com.pref.annotations.DefaultFloat",
-        "com.pref.annotations.DefaultLong",
-        "com.pref.annotations.DefaultBoolean",
-        "com.pref.annotations.DefaultString",
-        "com.pref.annotations.ObjectType",
-        "com.pref.annotations.ParcelType"
+        "com.kvpref.annotations.SharePref",
+        "com.kvpref.annotations.PrefKey",
+        "com.kvpref.annotations.DefaultInt",
+        "com.kvpref.annotations.DefaultFloat",
+        "com.kvpref.annotations.DefaultLong",
+        "com.kvpref.annotations.DefaultBoolean",
+        "com.kvpref.annotations.DefaultString",
+        "com.kvpref.annotations.ObjectType",
+        "com.kvpref.annotations.ParcelType"
 })
 public class PrefProcessor extends AbstractProcessor {
 

@@ -3,11 +3,6 @@ package com.kvpref.sample.data;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-/**
- * @author： Liudy
- * @description：
- * @date： 2021-04-13
- */
 public class Home<T> implements Parcelable {
 
     public T t;
