@@ -80,8 +80,10 @@ public class MethodBuilder {
                 .addParameter(Context, "context")
                 .addParameter(String.class, "pref_name")
                 .addStatement("$T preference = context.getSharedPreferences(pref_name, 0)", SharedPreferences)
-                .addStatement("$N.importFromSharedPreferences(preference)", mmkv)
-                .addStatement("preference.edit().clear();")
+                .addStatement("int count = $N.importFromSharedPreferences(preference)", mmkv)
+                .beginControlFlow("if(count > 0)")
+                .addStatement("preference.edit().clear()")
+                .endControlFlow()
                 .build();
     }
 
