@@ -389,7 +389,7 @@ public class MethodBuilder {
     public static MethodSpec createGetGenericObject(String fieldName, String key, String genericObjectType) {
         int start = genericObjectType.lastIndexOf("<");
         int end = genericObjectType.lastIndexOf(">");
-        //构建主类型
+
         String mainPackagePath = genericObjectType.substring(0, start);
         int mainIndex = mainPackagePath.lastIndexOf(".");
         String mainPackageName = mainPackagePath.substring(0, mainIndex);
@@ -427,7 +427,7 @@ public class MethodBuilder {
     public static MethodSpec createPutGenericObject(String fieldName, String key, String genericObjectType) {
         int start = genericObjectType.lastIndexOf("<");
         int end = genericObjectType.lastIndexOf(">");
-        //构建主类型
+
         String mainPackagePath = genericObjectType.substring(0, start);
         int mainIndex = mainPackagePath.lastIndexOf(".");
         String mainPackageName = mainPackagePath.substring(0, mainIndex);
