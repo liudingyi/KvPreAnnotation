@@ -27,7 +27,6 @@ import javax.lang.model.element.Element;
 import javax.lang.model.element.Modifier;
 import javax.lang.model.element.TypeElement;
 
-@SupportedSourceVersion(SourceVersion.RELEASE_7)
 @SupportedAnnotationTypes({
         "com.pref.annotations.SharePref",
         "com.pref.annotations.PrefKey",
